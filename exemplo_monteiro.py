@@ -48,3 +48,56 @@ g = (1, 1)
 #print('>', e)
 
 
+# --------- FUNCTION
+#def my_function(nbr):
+#    nbr += 1
+#    return nbr
+    
+#nbr = 1
+#add = my_function(nbr)
+#temp = 'Se eu adicionar 1 ao {pp} vou ter o resultado {pp}'
+
+#print(temp.format(pp=add))
+
+
+# --------- CLASS
+#class Meca():
+#    MECA = 1
+#    _LALA = 1
+    
+#    def __init__(self):
+#        self.mi = 1
+#        
+#    def f1(self, nbr):
+#        print(nbr+1)
+#    
+#    def variaveis(self):
+#        print('MECA', self.MECA)
+#        print('mi', self.mi)
+
+#a = Meca()
+#a.variaveis()
+#a.MECA = 2
+#print(a.MECA)
+
+#a._LALA = 3
+#print(a._LALA)
+
+
+# --------- DOCKSTRING
+def add_binary(a, b):
+    '''
+    Returns the sum of two decimal numbers in binary digits.
+
+            Parameters:
+                    a (int): A decimal integer
+                    b (int): Another decimal integer
+
+            Returns:
+                    binary_sum (str): Binary string of the sum of a and b
+    '''
+    binary_sum = bin(a+b)[2:]
+    return binary_sum
+    
+    
+help(add_binary)
